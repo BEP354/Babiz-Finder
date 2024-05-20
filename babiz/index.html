@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="dicoding:email" content="21104036@ittelkom-pwt.ac.id">
+
+  <link rel="stylesheet" href="style/navbar.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="shortcut icon" href="image/logo-babiz.png" type="image/x-icon">
+
+  <title>Babiz</title>
+</head>
+
+<body class="d-flex flex-column min-vh-100">
+  <nav class="navbar sticky-top navbar-expand-lg rounded-bottom-4" style="background-color: #FFF200;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">
+        <img src="image/logo-babiz.png" width="50px" alt="logo-babiz">
+      </a>
+      <button class="navbar-toggler my-2 rounded-4 focus-ring" type="button" data-bs-toggle="collapse"
+        style="--bs-focus-ring-color: #AFB3FFD9" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse my-2 " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item me-4">
+            <a class="nav-link active" href="index.html">Beranda</a>
+          </li>
+          <li class="nav-item me-4">
+            <a class="nav-link" href="umkm.html">UMKM</a>
+          </li>
+          <li class="nav-item text-center">
+            <a class="btn btn-light rounded-pill" href="login.html" role="button">Login UMKM</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="container my-4">
+      <h1 style="color: black;">Berdayakan <span style="color: #AFB3FF;">Banyumas</span></h1>
+    </header>
+  
+    <div class="container">
+      <div id="main-content"></div>
+  
+      <div id="sidebar">
+        <div class="umkm-section">
+          <img src="image/beranda1.png" width="50%" height="auto" style="float: right; margin-left: 20px;"
+            alt="UMKM Image">
+          <div class="umkm-info" id="center">
+            <strong>PILIH UMKM FAVORIT KAMU!</strong>
+            <p>BabizFinder - Banyumas Business Finder <br> Cari UMKM? Pas banget, bisa cari info di sini!</p>
+          </div>
+          <div class="umkm-buttons mt-4 mb-5">
+            <a class="btn btn-warning rounded-pill me-3" href="about.html" role="button">Pelajari Selengkapnya</a>
+            <a class="btn btn-secondary rounded-pill" href="umkm.html" role="button">Telusuri</a>
+          </div>
+        </div>
+      </div>
+    </div>
+      </div>
+  
+    <style>
+      .umkm-section {
+        overflow: hidden;
+      }
+  
+      .umkm-info {
+        text-align: left;
+        font-size: 25px;
+        margin-top: 140px;
+      }
+  
+      .umkm-section strong {
+        font-size: 29px;
+      }
+  
+      .umkm-buttons {
+        display: flex;
+        align-items: center;
+      }
+  
+      .btn-warning {
+        background-color: #AFB3FFD9;
+        border-color: #FFF200;
+      }
+  
+      .btn-secondary {
+        background-color: #6c757d;
+        border-color: #6c757d;
+      }
+  
+      .wave-svg {
+        width: 100%;
+        margin-top: 20px;
+      }
+  
+      @media only screen and (max-width: 800px) {
+        .umkm-section img {
+          width: 100%;
+          float: none;
+          margin-left: 0;
+        }
+  
+        .umkm-info {
+          margin-top: 100px;
+          text-align: left;
+          font-size: 25px;
+        }
+  
+        .umkm-section strong {
+          font-size: 29px;
+        }
+        
+      }
+    </style>
+  </main>
+  <footer class="py-3 rounded-top-4 mt-auto" style="background-color: #fff200">
+    <div class="container">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3 border-secondary">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
+        <li class="nav-item"><a href="https://instagram.com/babizfinder?igshid=OGQ5ZDc2ODk2ZA==" class="nav-link px-2 text-body-secondary">Follow Us</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link px-2 text-body-secondary">About</a></li>
+      </ul>
+      <div class="text-center mb-3">
+        <img src="image/logo-babiz.png" alt="" width="35" />
+      </div>
+      <p class="text-center text-body-secondary">&copy; 2023 BaBiz Finder</p>
+    </div>
+  </footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+        <!-- Firebase Core -->
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+        <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-storage-compat.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-database-compat.js"></script>
+    
+</body>
+</html>
